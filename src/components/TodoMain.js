@@ -28,6 +28,9 @@ const TodoMain = () => {
   const handleDelete = (event) => {
     toDoList.splice(event.target.value, 1);
     setToDoList([...toDoList]);
+    setToDo({
+      ...INIT_FORM_DATA
+    });
   }
 
   const handleCompleteCheckbox = (event) => {
