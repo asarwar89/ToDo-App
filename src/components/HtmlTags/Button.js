@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Button.module.css';
 
 const Button = ({
+  buttonClass,
   type,
   buttonLabel,
   onClick,
@@ -11,7 +12,7 @@ const Button = ({
 
   return (
     <button 
-      className={isSmall? `${classes.Button} ${classes.Small}`: classes.Button}
+      className={`${classes.Button} ${classes[buttonClass]} ${isSmall? classes.Small : ''}`}
       type={type}
       onClick={onClick}
       value={value}

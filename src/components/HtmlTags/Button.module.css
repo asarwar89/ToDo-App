@@ -23,6 +23,10 @@
   width: auto;
 }
 
+.Button.Delete {
+  background-color: #ff6100;
+}
+
 @media (min-width: 768px) {
   .Button {
     min-width: 266px;

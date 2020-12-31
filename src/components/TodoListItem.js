@@ -34,7 +34,7 @@ const TodoListItem = ({
 
         <span className={`${classes.Priority} ${classes[PRIORITY_LIST[item.priority]]}`}>{PRIORITY_LIST[item.priority]}</span>
         
-        <span className={item.completed ? `${classes.Copy} ${classes.CompletedTask}`: classes.Copy}>{item.toDo}</span>
+        <span className={`${classes.Copy} ${item.completed ? classes.CompletedTask : ''}`}>{item.toDo}</span>
       </p>
 
       <div className={classes.ItemButtons}>
@@ -46,6 +46,7 @@ const TodoListItem = ({
         />
 
         <Button
+          buttonClass="Delete"
           value={index}
           buttonLabel="Delete"
           onClick={handleDelete}
