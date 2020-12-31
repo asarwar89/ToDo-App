@@ -1,0 +1,76 @@
+.CompletedTask {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.TodoListItem {
+  border: 1px solid #ccc;
+  border-radius: .3rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  position: relative;
+  text-align: left;
+}
+
+.TodoTaskCopy {
+  align-items: center;
+  color: #003d4f;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Priority {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 600;
+  min-width: 65px;
+  border-radius: .3rem;
+  line-height: 1.5rem;
+  margin: 10px;
+  position: absolute;
+  right: .75rem;
+  text-align: center;
+  top: -1.3rem;
+}
+
+.Priority.High {
+  background: #ff9001;
+}
+
+.Priority.Medium {
+  background: #00c6ff;
+}
+
+.Priority.Low {
+  background: #00ffff;
+}
+
+.ItemButtons {
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.Copy {
+  width: calc(100% - 35px);
+}
+
+@media (min-width: 768px) {
+  .TodoListItem {
+    align-items: center;
+    display: flex;
+  }
+
+  .TodoTaskCopy {
+    width: calc( 100% - 195px );
+  }
+
+  .ItemButtons {
+    width: 195px;
+  }  
+  
+  .Priority {
+    position: static;
+  }
+}

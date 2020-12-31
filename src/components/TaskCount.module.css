@@ -1,0 +1,18 @@
+.TaskCounts {
+  display: flex;
+  justify-content: center;
+}
+
+.Total {
+  margin-right: 20px;
+}
+
+.TaskCount {
+  background: #86e0ff;
+  padding: 10px;
+  color: #000c10;
+  border-radius: 5px;
+  min-width: 105px;
+  font-weight: bold;
+  margin: .5rem;
+}
