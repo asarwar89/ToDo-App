@@ -150,4 +150,10 @@ describe('<TodoForm /> with toDo values in props', () => {
     expect(mountedcontainerWithEdit.find('button[type="submit"]').text()).toEqual('Save');
   });
 
+  it('triggers handleEditCancel function when Cancel button clicked', () => {
+    mountedcontainerWithEdit.find('button').at(1).simulate('click', {
+    });
+    expect(initialProps.handleEditCancel).toHaveBeenCalledTimes(1);
+  });
+
 });
