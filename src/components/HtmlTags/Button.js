@@ -17,7 +17,7 @@ const Button = ({
       }
       type={type? type : "button"}
       onClick={onClick ? onClick : null}
-      value={isNaN(value) ? '' : value}
+      value={value !== undefined ? value : null}
     >
       { buttonLabel }
     </button>
