@@ -71,19 +71,18 @@ const TodoMain = () => {
   }
 
   const handleToDoChange = (event) => {
-    let currentTodo = toDoItem;
 
     if (event.target.type === 'radio') {
-      currentTodo.priority = Number(event.target.value);
+      toDoItem.priority = Number(event.target.value);
     } else {
-      currentTodo.toDo = event.target.value;
+      toDoItem.toDo = event.target.value;
 
       if (event.target.value.length > 0 && error.length > 0) {
         setError('');
       }
     }
 
-    setToDo({...currentTodo});
+    setToDo({...toDoItem});
   }
 
   const handleEditCancel = () => {
