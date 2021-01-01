@@ -12,10 +12,12 @@ const Button = ({
 
   return (
     <button 
-      className={`${classes.Button} ${classes[buttonClass]} ${isSmall? classes.Small : ''}`}
-      type={type}
-      onClick={onClick}
-      value={value}
+      className={
+        `${classes.Button} ${buttonClass ? classes[buttonClass] : ''} ${isSmall? classes.Small : ''}`
+      }
+      type={type? type : "button"}
+      onClick={onClick ? onClick : null}
+      value={value ? value : ''}
     >
       { buttonLabel }
     </button>
