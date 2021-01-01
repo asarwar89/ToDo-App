@@ -52,7 +52,7 @@ describe('<TodoForm /> with demo props', () => {
       className: "Button  ",
       onClick: null,
       type: "submit",
-      value: "",
+      value: null,
     });
   });
 
@@ -142,7 +142,7 @@ describe('<TodoForm /> with toDo values in props', () => {
       className: "Button  ",
       onClick: expect.any(Function),
       type: "button",
-      value: "",
+      value: null,
     });
   });
 
