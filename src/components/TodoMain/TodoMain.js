@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { DemoData } from './DemoData';
+import { DemoData } from '../DemoData';
 
-import TodoForm from './TodoForm';
-import TodoListItem from './TodoListItem';
-import TaskCount from './TaskCount';
+import TodoForm from '../TodoForm/TodoForm';
+import TodoListItem from '../TodoListItem/TodoListItem';
+import TaskCount from '../TaskCount/TaskCount';
 import classes from './TodoMain.module.css';
 
 const INIT_FORM_DATA = {
@@ -25,7 +25,7 @@ const TodoMain = () => {
     setToDo({...toDoList[editIndex]});
   }
 
-  const handleDelete = (event) => {
+  const handleRemove = (event) => {
     toDoList.splice(event.target.value, 1);
     setToDoList([...toDoList]);
     setToDo({
@@ -119,7 +119,7 @@ const TodoMain = () => {
               index={index}
               handleCompleteCheckbox={handleCompleteCheckbox}
               handleEdit={handleEdit}
-              handleDelete={handleDelete}
+              handleRemove={handleRemove}
             />
         ))}
       </div>

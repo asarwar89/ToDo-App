@@ -1,7 +1,7 @@
 import React from 'react';
 
-import PriorityRadios from './PriorityRadios';
-import Button from './HtmlTags/Button';
+import PriorityRadios from '../PriorityRadios/PriorityRadios';
+import Button from '../HtmlTags/Button';
 import classes from './TodoForm.module.css';
 
 const TodoForm = ({

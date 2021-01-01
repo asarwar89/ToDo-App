@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './HtmlTags/Button';
+import Button from '../HtmlTags/Button';
 import classes from './TodoListItem.module.css';
 
 const PRIORITY_LIST = {
@@ -13,7 +13,7 @@ const TodoListItem = ({
   index,
   handleCompleteCheckbox,
   handleEdit,
-  handleDelete
+  handleRemove
 }) => {
 
   return (
@@ -46,10 +46,10 @@ const TodoListItem = ({
         />
 
         <Button
-          buttonClass="Delete"
+          buttonClass="Remove"
           value={index}
-          buttonLabel="Delete"
-          onClick={handleDelete}
+          buttonLabel="Remove"
+          onClick={handleRemove}
           isSmall={true}
         />
       </div>

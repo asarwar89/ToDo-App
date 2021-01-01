@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './components/Header';
-import TodoMain from './components/TodoMain';
+import TodoMain from './components/TodoMain/TodoMain';
 
 import './App.css';
 

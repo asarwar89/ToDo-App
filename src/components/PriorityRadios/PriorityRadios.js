@@ -1,6 +1,6 @@
 import React from 'react';
 
-import RadioButton from './HtmlTags/RadioButton';
+import RadioButton from '../HtmlTags/RadioButton';
 import classes from './PriorityRadios.module.css';
 
 const PriorityRadios = (props) => {
