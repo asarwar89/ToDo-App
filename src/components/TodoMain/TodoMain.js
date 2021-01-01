@@ -6,7 +6,7 @@ import TodoListItem from '../TodoListItem/TodoListItem';
 import TaskCount from '../TaskCount/TaskCount';
 import classes from './TodoMain.module.css';
 
-const INIT_FORM_DATA = {
+export const INIT_FORM_DATA = {
   toDo: '',
   priority: 3,
   completed: false,
