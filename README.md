@@ -1,11 +1,11 @@
 # Considerations
-* Tested on latest browser only. May not be compitable with old browsers.
+* Tested on latest browser only. May not be compatible with old browsers.
 
 * Tasks are ordered by active and complete. Then by priority high to low.
 
 * Few demo tasks are added to help with testing purposes
 
-* As theres no backend/database, the app does not store the state. Hence, on refresh app loses all tasks and starts fresh with demo tasks.
+* As there's no backend/database, the app does not store the state. Hence, on refresh app loses all tasks and starts fresh with demo tasks.
 
 # Getting Started with Create React App
 
